@@ -1,0 +1,12 @@
+[MASTER]
+ignore=src/user.py,src/auth_service.py
+
+[MESSAGES CONTROL]
+disable=C0114,C0115,C0116
+
+[FORMAT]
+max-line-length=120
+
+[DESIGN]
+max-args=6
+max-attributes=10

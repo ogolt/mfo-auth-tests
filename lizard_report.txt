@@ -1,0 +1,33 @@
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+       4      1     36      1       4 __init__@7-10@src/auth_service.py
+      12      4     98      4      12 register_user@12-23@src/auth_service.py
+       7      4     61      3       7 login@25-31@src/auth_service.py
+      13      5     83      4      13 change_user_role@33-45@src/auth_service.py
+       2      1     23      2       2 get_user_by_id@47-48@src/auth_service.py
+       5      3     36      2       5 get_user_by_username@50-54@src/auth_service.py
+       2      1     18      1       2 get_all_users@56-57@src/auth_service.py
+       9      3     78      3       9 check_permission@59-67@src/auth_service.py
+       6      4     40      2       6 is_password_strong@69-74@src/auth_service.py
+       6      1     50      5       6 __init__@14-19@src/user.py
+       2      1     27      2       2 _hash_password@21-22@src/user.py
+       2      1     22      2       2 check_password@24-25@src/user.py
+      10      5     65      2      10 validate_password@27-36@src/user.py
+       7      3     49      3       7 change_password@38-44@src/user.py
+       3      1     18      2       3 change_role@46-48@src/user.py
+       2      1     10      1       2 __repr__@50-51@src/user.py
+3 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+     63       6.7     2.9       52.6         9     src/auth_service.py
+     40       4.6     1.9       34.4         7     src/user.py
+      0       0.0     0.0        0.0         0     src/__init__.py
+
+===============================================================================================================
+No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or nloc > 1000000 or parameter_count > 100)
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+       103       5.8     2.4       44.6       16            0      0.00    0.00
