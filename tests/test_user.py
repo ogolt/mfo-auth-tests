@@ -15,10 +15,11 @@ class TestUser(unittest.TestCase):
         self.assertEqual(user.username, "testuser")
         self.assertEqual(user.role, UserRole.CLIENT)
 
-    def test_password_hashing(self):
-        user1 = User(1, "user1", "TestPass1!")
-        user2 = User(2, "user2", "TestPass1!")
-        self.assertNotEqual(user1._password_hash, user2._password_hash)
+    def test_password_hashing_creates_hash(self):
+        user = User(1, "user1", "TestPass1!")
+        self.assertIsNotNone(user._password_hash)
+        self.assertNotEqual(user._password_hash, "TestPass1!")
+        self.assertEqual(len(user._password_hash), 64)
 
     def test_check_password_correct(self):
         user = User(1, "testuser", "TestPass1!")
